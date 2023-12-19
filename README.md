@@ -16,5 +16,5 @@
 ### 该学习的已经学习完成了！还要继续学习新东西的话 加下面的群吧
 [如果你有不方便发的东西 可以加入我们的TG群](https://t.me/+208rGDduK4s1NWU1)
 
-[你也可以加入专门玩js逆向的交流QQ群【编程喵交流群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=6egP5tm2rrUCPOJj0j52PCyL5MM6YuYP&authKey=89mtVgStEuC85eDLVx6bRFhlTiqgjd6NmYIaICLYDGkfLExrLxHafFBoWakKfn4N&noverify=0&group_code=850969908)                             
+[你也可以加入专门玩js逆向的交流QQ群【编程喵交流群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8M97BQs-icsb3BitUoqxqIHIBcf6ayLf&authKey=kAJwU36Ih9k7nWbYXtUnXeZnnXOFpQpvv4Zl4PGxdCNd1icroeGsgK1eTpSVMXSw&noverify=0&group_code=461168359)                             
 
