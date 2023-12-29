@@ -1,7 +1,13 @@
 # WeChatOpenDevTools
 
+
 ###  ~~因部分原因本库已删除~~
 ###  不定时更新偏移 自己下载对应版本的偏移文件进行替换 
+
+[偏移文件使用视频教程] (https://www.bilibili.com/video/BV1aa4y197UU/?spm_id_from=333.999.0.0&vd_source=991584598cec1f0498349336312cee2f)
+
+视频中需要的文件在下面的QQ群
+
 ###  如果没有你的版本 联系下面群主
 
 ##  方法1. 
@@ -17,5 +23,5 @@
 ### 该学习的已经学习完成了！还要继续学习新东西的话 加下面的群吧
 [如果你有不方便发的东西 可以加入我们的TG群](https://t.me/+208rGDduK4s1NWU1)
 
-[你也可以加入专门玩js逆向的交流QQ群【编程喵交流群】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8M97BQs-icsb3BitUoqxqIHIBcf6ayLf&authKey=kAJwU36Ih9k7nWbYXtUnXeZnnXOFpQpvv4Zl4PGxdCNd1icroeGsgK1eTpSVMXSw&noverify=0&group_code=461168359)                             
+[你也可以加入专门玩js逆向的交流QQ群【JsDebug】](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8M97BQs-icsb3BitUoqxqIHIBcf6ayLf&authKey=kAJwU36Ih9k7nWbYXtUnXeZnnXOFpQpvv4Zl4PGxdCNd1icroeGsgK1eTpSVMXSw&noverify=0&group_code=461168359)                             
 
