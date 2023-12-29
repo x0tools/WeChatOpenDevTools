@@ -4,7 +4,7 @@
 ###  ~~因部分原因本库已删除~~
 ###  不定时更新偏移 自己下载对应版本的偏移文件进行替换 
 
-[偏移文件使用视频教程] (https://www.bilibili.com/video/BV1aa4y197UU/?spm_id_from=333.999.0.0&vd_source=991584598cec1f0498349336312cee2f)
+[偏移文件使用视频教程](https://www.bilibili.com/video/BV1aa4y197UU/?spm_id_from=333.999.0.0&vd_source=991584598cec1f0498349336312cee2f)
 
 视频中需要的文件在下面的QQ群
 
