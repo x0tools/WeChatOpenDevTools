@@ -1,0 +1,5 @@
+;
+for(var addressname in infos.address){
+    infos.address[addressname] = parseInt(infos.address[addressname]);
+};
+
