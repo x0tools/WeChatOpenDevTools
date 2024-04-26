@@ -4,7 +4,7 @@
 
 1.下载安装 node 18.15.0   https://nodejs.org/dist/v18.15.0/
 
-2.下载项目 把node_modules.zip 解压到项目目录下 
+2.下载项目 node 双击 打开小程序F12.bat 即可
 
 
 
