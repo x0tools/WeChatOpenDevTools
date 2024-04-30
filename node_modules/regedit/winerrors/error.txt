@@ -1,0 +1,394 @@
+wbemErrFailed
+2147749889 (0x80041001)
+The call failed.
+wbemErrNotFound
+2147749890
+The object could not be found.
+wbemErrAccessDenied
+2147749891 (0x80041003)
+The current user does not have permission to perform the action.
+wbemErrProviderFailure
+2147749892 (0x80041004)
+The provider has failed at some time other than during initialization.
+wbemErrTypeMismatch
+2147749893 (0x80041005)
+A type mismatch occurred.
+wbemErrOutOfMemory
+2147749894 (0x80041006)
+There was not enough memory for the operation.
+wbemErrInvalidContext
+2147749895 (0x80041007)
+The SWbemNamedValue object is not valid.
+wbemErrInvalidParameter
+2147749896 (0x80041008)
+One of the parameters to the call is not correct.
+wbemErrNotAvailable
+2147749897 (0x80041009)
+The resource, typically a remote server, is not currently available.
+wbemErrCriticalError
+2147749898 (0x8004100A)
+An internal, critical, and unexpected error occurred. Report this error to Microsoft Technical Support.
+wbemErrInvalidStream
+2147749899 (0x8004100B)
+One or more network packets were corrupted during a remote session.
+wbemErrNotSupported
+2147749900 (0x8004100C)
+The feature or operation is not supported.
+wbemErrInvalidSuperclass
+2147749901 (0x8004100D)
+The parent class specified is not valid.
+wbemErrInvalidNamespace
+2147749902 (0x8004100E)
+The namespace specified could not be found.
+wbemErrInvalidObject
+2147749903 (0x8004100F)
+The specified instance is not valid.
+wbemErrInvalidClass
+2147749904 (0x80041010)
+The specified class is not valid.
+wbemErrProviderNotFound
+2147749905 (0x80041011)
+A provider referenced in the schema does not have a corresponding registration.
+wbemErrInvalidProviderRegistration
+2147749906 (0x80041012)
+A provider referenced in the schema has an incorrect or incomplete registration. This error may be caused by a missing pragma namespace command in the MOF file used to register the provider, resulting in the provider being registered in the wrong WMI namespace. This error may also be caused by a corrupt repository, which may be fixed by deleting it and recompiling the MOF files.
+wbemErrProviderLoadFailure
+2147749907 (0x80041013)
+COM cannot locate a provider referenced in the schema. This error may be caused by any of the following:
+The provider is using a WMI DLL that does not match the .lib fileused when the provider was built.
+The provider's DLL or any of the DLLs on which it depends is corrupt.
+The provider failed to export DllRegisterServer.
+An in-process provider was not registered using /regsvr32.
+An out-of-process provider was not registered using /regserver.
+wbemErrInitializationFailure
+2147749908 (0x80041014)
+A component, such as a provider, failed to initialize for internal reasons.
+wbemErrTransportFailure
+2147749909 (0x80041015)
+A networking error occurred, preventing normal operation.
+wbemErrInvalidOperation
+2147749910 (0x80041016)
+The requested operation is not valid. This error usually applies to invalid attempts to delete classes or properties.
+wbemErrInvalidQuery
+2147749911 (0x80041017)
+The requested operation is not valid. This error usually applies to invalid attempts to delete classes or properties.
+wbemErrInvalidQueryType
+2147749912 (0x80041018)
+The requested query language is not supported.
+wbemErrAlreadyExists
+2147749913 (0x80041019)
+In a put operation, the wbemChangeFlagCreateOnly flag was specified, but the instance already exists.
+wbemErrOverrideNotAllowed
+2147749914 (0x8004101A)
+It is not possible to perform the add operation on this qualifier because the owning object does not permit overrides.
+wbemErrPropagatedQualifier
+2147749915 (0x8004101B)
+The user attempted to delete a qualifier that was not owned. The qualifier was inherited from a parent class.
+wbemErrPropagatedProperty
+2147749916 (0x8004101C)
+The user attempted to delete a property that was not owned. The property was inherited from a parent class.
+wbemErrUnexpected
+2147749917 (0x8004101D)
+The client made an unexpected and illegal sequence of calls, such as calling EndEnumeration before calling BeginEnumeration.
+wbemErrIllegalOperation
+2147749918 (0x8004101E)
+The user requested an illegal operation, such as spawning a class from an instance.
+wbemErrCannotBeKey
+2147749919 (0x8004101F)
+There was an illegal attempt to specify a key qualifier on a property that cannot be a key. The keys are specified in the class definition for an object, and cannot be altered on a per-instance basis.
+wbemErrIncompleteClass
+2147749920 (0x80041020)
+The current object is not a valid class definition. Either it is incomplete, or it has not been registered with WMI using SWbemObject.Put_.
+wbemErrInvalidSyntax
+2147749921 (0x80041021)
+The syntax of an input parameter is incorrect for the applicable data structure. For example, when a CIM datetime structure does not have the correct format when passed to SWbemDateTime.SetFileTime.
+wbemErrNondecoratedObject
+2147749922 (0x80041022)
+Reserved for future use.
+wbemErrReadOnly
+2147749923 (0x80041023)
+The property that you are attempting to modify is read-only.
+wbemErrProviderNotCapable
+2147749924 (0x80041024)
+The provider cannot perform the requested operation. This would include a query that is too complex, retrieving an instance, creating or updating a class, deleting a class, or enumerating a class.
+wbemErrClassHasChildren
+2147749925 (0x80041025)
+An attempt was made to make a change that would invalidate a subclass.
+wbemErrClassHasInstances
+2147749926 (0x80041026)
+An attempt has been made to delete or modify a class that has instances.
+wbemErrQueryNotImplemented
+2147749927 (0x80041027)
+Reserved for future use.
+wbemErrIllegalNull
+2147749928 (0x80041028)
+A value of Nothing was specified for a property that may not be Nothing, such as one that is marked by a Key, Indexed, or Not_Null qualifier.
+wbemErrInvalidQualifierType
+2147749929 (0x80041029)
+The CIM type specified for a property is not valid.
+wbemErrInvalidPropertyType
+2147749930 (0x8004102A)
+The CIM type specified for a property is not valid.
+wbemErrValueOutOfRange
+2147749931 (0x8004102B)
+The request was made with an out-of-range value, or is incompatible with the type.
+wbemErrCannotBeSingleton
+2147749932 (0x8004102C)
+An illegal attempt was made to make a class singleton, such as when the class is derived from a non-singleton class.
+wbemErrInvalidCimType
+2147749933 (0x8004102D)
+The CIM type specified is not valid.
+wbemErrInvalidMethod
+2147749934 (0x8004102E)
+The requested method is not available.
+wbemErrInvalidMethodParameters
+2147749935 (0x8004102F)
+The parameters provided for the method are not valid.
+wbemErrSystemProperty
+2147749936 (0x80041030)
+There was an attempt to get qualifiers on a system property.
+wbemErrInvalidProperty
+2147749937 (0x80041031)
+The property type is not recognized.
+wbemErrCallCancelled
+2147749938 (0x80041032)
+An asynchronous process has been canceled internally or by the user. Note that due to the timing and nature of the asynchronous operation the operation may not have been truly canceled.
+wbemErrShuttingDown
+2147749939 (0x80041033)
+The user has requested an operation while WMI is in the process of shutting down.
+wbemErrPropagatedMethod
+2147749940 (0x80041034)
+An attempt was made to reuse an existing method name from a parent class, and the signatures did not match.
+wbemErrUnsupportedParameter
+2147749941 (0x80041035)
+One or more parameter values, such as a query text, is too complex or unsupported. WMI is therefore requested to retry the operation with simpler parameters.
+wbemErrMissingParameter
+2147749942 (0x80041036)
+A parameter was missing from the method call.
+wbemErrInvalidParameterId
+2147749943 (0x80041037)
+A method parameter has an ID qualifier that is not valid.
+wbemErrNonConsecutiveParameterIds
+2147749944 (0x80041038)
+One or more of the method parameters have ID qualifiers that are out of sequence.
+wbemErrParameterIdOnRetval
+2147749945 (0x80041039)
+The return value for a method has an ID qualifier.
+wbemErrInvalidObjectPath
+2147749946 (0x8004103A)
+The specified object path was not valid.
+wbemErrOutOfDiskSpace
+2147749947
+Windows Server 2003:  Disk is out of space or the 4 GB limit on WMI repository (CIM repository) size is reached.
+wbemErrBufferTooSmall
+2147749948 (0x8004103C)
+The supplied buffer was too small to hold all the objects in the enumerator or to read a string property.
+wbemErrUnsupportedPutExtension
+2147749949 (0x8004103D)
+The provider does not support the requested put operation.
+wbemErrUnknownObjectType
+2147749950 (0x8004103E)
+An object with an incorrect type or version was encountered during marshaling.
+wbemErrUnknownPacketType
+2147749951 (0x8004103F)
+A packet with an incorrect type or version was encountered during marshaling.
+wbemErrMarshalVersionMismatch
+2147749952 (0x80041040)
+The packet has an unsupported version.
+wbemErrMarshalInvalidSignature
+2147749953 (0x80041041)
+The packet appears to be corrupted.
+wbemErrInvalidQualifier
+2147749954 (0x80041042)
+An attempt has been made to mismatch qualifiers, such as putting [key] on an object instead of a property.
+wbemErrInvalidDuplicateParameter
+2147749955 (0x80041043)
+A duplicate parameter has been declared in a CIM method.
+wbemErrTooMuchData
+2147749956 (0x80041044)
+Reserved for future use.
+wbemErrServerTooBusy
+2147749957 (0x80041045)
+A call to IWbemObjectSink::Indicate has failed. The provider may choose to refire the event.
+wbemErrInvalidFlavor
+2147749958 (0x80041046)
+The specified flavor was not valid.
+wbemErrCircularReference
+2147749959 (0x80041047)
+An attempt has been made to create a reference that is circular (for example, deriving a class from itself).
+wbemErrUnsupportedClassUpdate
+2147749960
+The specified class is not supported.
+wbemErrCannotChangeKeyInheritance
+2147749961 (0x80041049)
+An attempt was made to change a key when instances or subclasses are already using the key.
+wbemErrCannotChangeIndexInheritance
+2147749968 (0x80041050)
+An attempt was made to change an index when instances or subclasses are already using the index.
+wbemErrTooManyProperties
+2147749969 (0x80041051)
+An attempt was made to create more properties than the current version of the class supports.
+wbemErrUpdateTypeMismatch
+2147749970 (0x80041052)
+A property was redefined with a conflicting type in a derived class.
+wbemErrUpdateOverrideNotAllowed
+2147749971 (0x80041053)
+An attempt was made in a derived class to override a non-overrideable qualifier.
+wbemErrUpdatePropagatedMethod
+2147749972 (0x80041054)
+A method was redeclared with a conflicting signature in a derived class.
+wbemErrMethodNotImplemented
+2147749973 (0x80041055)
+An attempt was made to execute a method not marked with [implemented] in any relevant class.
+wbemErrMethodDisabled
+2147749974 (0x80041056)
+An attempt was made to execute a method marked with [disabled].
+wbemErrRefresherBusy
+2147749975 (0x80041057)
+The refresher is busy with another operation.
+wbemErrUnparsableQuery
+2147749976 (0x80041058)
+The filtering query is syntactically not valid.
+wbemErrNotEventClass
+2147749977 (0x80041059)
+The FROM clause of a filtering query references a class that is not an event class (not derived from __Event).
+wbemErrMissingGroupWithin
+2147749978 (0x8004105A)
+A GROUP BY clause was used without the corresponding GROUP WITHIN clause.
+wbemErrMissingAggregationList
+2147749979 (0x8004105B)
+A GROUP BY clause was used. Aggregation on all properties is not supported.
+wbemErrPropertyNotAnObject
+2147749980 (0x8004105C)
+Dot notation was used on a property that is not an embedded object.
+wbemErrAggregatingByObject
+2147749981 (0x8004105D)
+A GROUP BY clause references a property that is an embedded object without using dot notation.
+wbemErrUninterpretableProviderQuery
+2147749983 (0x8004105F)
+An event provider registration query ( __EventProviderRegistration) did not specify the classes for which events were provided.
+wbemErrBackupRestoreWinmgmtRunning
+2147749984 (0x80041060)
+An request was made to back up or restore the repository while WMI was using it.
+wbemErrQueueOverflow
+2147749985 (0x80041061)
+The asynchronous delivery queue overflowed due to the event consumer being too slow.
+wbemErrPrivilegeNotHeld
+2147749986 (0x80041062)
+The operation failed because the client did not have the necessary security privilege.
+wbemErrInvalidOperator
+2147749987 (0x80041063)
+The operator is not valid for this property type.
+wbemErrLocalCredentials
+2147749988 (0x80041064)
+The user specified a username, password or authority for a local connection. The user must use a blank username/password and rely on default security.
+wbemErrCannotBeAbstract
+2147749989 (0x80041065)
+The class was made abstract when its parent class is not abstract.
+wbemErrAmendedObject
+2147749990 (0x80041066)
+An amended object was put without the wbemFlagUseAmendedQualifiers flag being specified.
+wbemErrClientTooSlow
+2147749991 (0x80041067)
+Windows Server 2003:  The client was not retrieving objects quickly enough from an enumeration. This constant is returned when a client creates an enumeration object but does not retrieve objects from the enumerator in a timely fashion, causing the enumerator's object caches to get backed up.
+wbemErrNullSecurityDescriptor
+2147749992 (0x80041068)
+Windows Server 2003:  A null security descriptor was used.
+wbemErrTimeout
+2147749993 (0x80041069)
+Windows Server 2003:  The operation timed out.
+wbemErrInvalidAssociation
+2147749994 (0x8004106A)
+Windows Server 2003:  The association being used is not valid.
+wbemErrAmbiguousOperation
+2147749995 (0x8004106B)
+Windows Server 2003:  The operation was ambiguous.
+wbemErrQuotaViolation
+2147749996 (0x8004106C)
+Windows Server 2003:  WMI is taking up too much memory. This could be caused either by low memory availability or excessive memory consumption by WMI.
+wbemErrTransactionConflict
+2147749997 (0x8004106D)
+Windows Server 2003:  The operation resulted in a transaction conflict.
+wbemErrForcedRollback
+2147749998 (0x8004106E)
+Windows Server 2003:  The transaction forced a rollback.
+wbemErrUnsupportedLocale
+2147749999 (0x8004106F)
+Windows Server 2003:  The locale used in the call is not supported.
+wbemErrHandleOutOfDate
+2147750000 (0x80041070)
+Windows Server 2003:  The object handle is out of date.
+wbemErrConnectionFailed
+2147750001 (0x80041071)
+Windows Server 2003:  Indicates that the connection to the SQL database failed.
+wbemErrInvalidHandleRequest
+2147750002 (0x80041072)
+Windows Server 2003:  The handle request was not valid.
+wbemErrPropertyNameTooWide
+2147750003 (0x80041073)
+Windows Server 2003:  The property name contains more than 255 characters.
+wbemErrClassNameTooWide
+2147750004 (0x80041074)
+Windows Server 2003:  The class name contains more than 255 characters.
+wbemErrMethodNameTooWide
+2147750005 (0x80041075)
+Windows Server 2003:  The method name contains more than 255 characters.
+wbemErrQualifierNameTooWide
+2147750006 (0x80041076)
+Windows Server 2003:  The qualifier name contains more than 255 characters.
+wbemErrRerunCommand
+2147750007 (0x80041077)
+Windows Server 2003:  Indicates that an SQL command should be rerun because there is a deadlock in SQL. This can be returned only when data is being stored in an SQL database.
+wbemErrDatabaseVerMismatch
+2147750008 (0x80041078)
+Windows Server 2003:  The database version does not match the version that the repository driver processes.
+wbemErrVetoDelete
+2147750010 (0x8004107A)
+Windows Server 2003:  WMI cannot do the delete operation because the provider does not allow it.
+wbemErrVetoPut
+2147750010 (0x8004107A)
+Windows Server 2003:  WMI cannot do the put operation because the provider does not allow it.
+wbemErrInvalidLocale
+2147750016 (0x80041080)
+Windows Server 2003:  The specified locale identifier was not valid for the operation.
+wbemErrProviderSuspended
+2147750017 (0x80041081)
+Windows Server 2003:  The provider is suspended.
+wbemErrSynchronizationRequired
+2147750018 (0x80041082)
+Windows Server 2003:  The object must be committed and retrieved again before the requested operation can succeed. This constant is returned when an object must be committed and re-retrieved to see the property value.
+wbemErrNoSchema
+2147750019 (0x80041083)
+Windows Server 2003:  The operation cannot be completed because no schema is available.
+wbemErrProviderAlreadyRegistered
+2147750020 (0x80041084)
+Windows Server 2003:  The provider registration cannot be done because the provider is already registered.
+wbemErrProviderNotRegistered
+2147750021 (0x80041085)
+Windows Server 2003:  The provider for the requested data is not registered.
+wbemErrFatalTransportError
+2147750022 (0x80041086)
+Windows Server 2003:  A fatal transport error occurred and other transport will not be attempted.
+wbemErrEncryptedConnectionRequired
+2147750023 (0x80041087)
+Windows Server 2003:  The client connection to WINMGMT must be encrypted for this operation. The IWbemServices proxy security settings should be adjusted and the operation retried.
+See WBEM_E_PROVIDER_TIMED_OUT in WMI Error Constants
+2147750024 (0x80041088)
+Windows Server 2003:  A provider failed to report results within the specified timeout.
+See WBEM_E_NO_KEY in WMI Error Constants
+2147750025 (0x80041089)
+Windows Server 2003:  User attempted to put an instance with no defined key.
+See WBEM_E_PROVIDER_DISABLED in WMI Error Constants
+2147750026 (0x8004108A)
+Windows Server 2003:  User attempted to register a provider instance but the COM server for the provider instance was unloaded.
+wbemErrRegistrationTooBroad
+2147753985 (0x80042001)
+Windows Server 2003:  The provider registration overlaps with the system event domain.
+wbemErrRegistrationTooPrecise
+2147753986 (0x80042002)
+Windows Server 2003:  A WITHIN clause was not used in this query.
+wbemErrTimedout
+2147758081 (0x80043001)
+Windows Server 2003:  Automation-specific error.
+wbemErrResetToDefault
+2147758082 (0x80043002)

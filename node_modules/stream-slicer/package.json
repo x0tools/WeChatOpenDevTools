@@ -1,0 +1,16 @@
+{
+  "name": "stream-slicer",
+  "version": "0.0.6",
+  "description": "Slice another stream via a transform stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "https://github.com/kessler/stream-slicer",
+  "keywords": [
+    "transform",
+    "stream"
+  ],
+  "author": "Yaniv Kessler",
+  "license": "MIT"
+}

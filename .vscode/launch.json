@@ -12,6 +12,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\WeChatAppEx.exe.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "启动公众号DevTools",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\WeChatWin.dll.js"
         }
     ]
 }

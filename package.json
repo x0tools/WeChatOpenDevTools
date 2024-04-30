@@ -2,13 +2,13 @@
   "dependencies": {
     "@types/frida-gum": "^18.4.3",
     "cmdline-windows": "^1.0.1",
-    "frida": "^16.1.4"
+    "frida": "^16.1.4",
+    "regedit": "^5.1.3"
   },
   "name": "wechatopendevtools",
   "description": "[如果你有不方便发的东西 可以加入我们的TG群](https://t.me/+208rGDduK4s1NWU1)",
   "version": "1.0.0",
   "main": "WeChatAppEx.exe.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
