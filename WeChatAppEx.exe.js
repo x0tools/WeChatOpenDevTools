@@ -5,6 +5,8 @@ const fs = require('fs');
 const path = require('path');
 
 async function run() {
+    let WeChatv = (process.argv[2]);
+
     var device = await frida.getLocalDevice();
     var processes = await device.enumerateProcesses();
     var pid = -1;
@@ -15,11 +17,14 @@ async function run() {
             if (commandLine.indexOf("--type=") == -1) {
                 
                 try {
-                    version = commandLine.split(`--wmpf_extra_config=\"{`)[1].split("}\"")[0];
-                    
-                    version = version.replaceAll(`\\"`, '"');
-                    version =  JSON.parse(`{${version}}`)
-                    version =  version.version;
+                    if(!WeChatv){
+                        version = commandLine.split(`--wmpf_extra_config=\"{`)[1].split("}\"")[0];
+                        version = version.replaceAll(`\\"`, '"');
+                        version =  JSON.parse(`{${version}}`)
+                        version =  version.version;
+                    }else{
+                        version = WeChatv;
+                    }
                     pid = p_.pid;
                 } catch {
                 }

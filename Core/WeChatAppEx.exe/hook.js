@@ -60,33 +60,6 @@ if (address.MenuItemDevToolsString) {
     menuItemDevToolsStringPtrData.writeUtf8String("DevTools");
 }
 
-
-//hook 启动配置项
-/*
-if(address.LaunchAppletBegin){
-    Interceptor.attach(address.LaunchAppletBegin, {
-        onEnter(args) {
-            send("HOOK到小程序加载! " + readStdString(this.context.rsi));
-
-            for (var i = 0; i < 0x1000; i+=8) {
-                try {
-                    var s = readStdString(this.context.rsi.add(i))
-                   
-                    var s1 = s.replaceAll("md5", "md6")
-                        .replaceAll('"enable_vconsole":false', '"enable_vconsole": true')
-                        .replaceAll('"frameset":false', '"frameset": true')
-                        //"frameset":false
-                    if (s !== s1) {
-                        writeStdString(this.context.rsi.add(i), s1)
-                    } 
-                } catch (a) {
-                }
-            }
-
-        }}
-    )
-}
-*/
 if (address.LaunchAppletBegin) {
 
     if (version >= 9105) {
@@ -101,6 +74,7 @@ if (address.LaunchAppletBegin) {
         });
 
     } else {
+        
         var LaunchAppletPtr = new NativeFunction(address.LaunchAppletBegin, 'bool', ['pointer', 'pointer', 'pointer']);
         Interceptor.attach(LaunchAppletPtr, {
             onEnter(args) {
@@ -111,21 +85,16 @@ if (address.LaunchAppletBegin) {
                 writeStdString(ComJsInfo, s1)
             }
         })
-
     }
-
 }
 
 
-
-
 //过部分小程序检测debugger模式
+
 if (address.SetEnableDebug) {
     Memory.protect(address.SetEnableDebug, 20, 'rw-')
     address.SetEnableDebug.writeUtf8String(" etEnableDebug")
 }
-
-
 
 
 if (version >= 9105 && address.WechatAppHtml && address.WechatWebHtml && data?.WechatAppHtmlText && data?.WechatWebHtmlText) {
@@ -136,12 +105,10 @@ if (version >= 9105 && address.WechatAppHtml && address.WechatWebHtml && data?.W
 }
 
 
-
 if (version < 9105 && address.WechatAppHtml && address.WechatWebHtml) {
 
     Interceptor.attach(address.WechatAppHtml, {
         onEnter(args) {
-            send(1111)
             this.context.rdx = address.WechatWebHtml;
             send("已还原完整F12")
         }

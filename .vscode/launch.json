@@ -21,6 +21,16 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\WeChatWin.dll.js"
-        }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "指定小程序版本",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\WeChatAppEx.exe.js",
+            "args": ["9129"]
+        },
     ]
 }
