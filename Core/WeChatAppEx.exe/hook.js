@@ -57,7 +57,7 @@ if (address.MenuItemDevToolsString) {
     var intptr_ = (menuItemDevToolsStringCr[3] & 0xFF) | ((menuItemDevToolsStringCr[4] & 0xFF) << 8) | ((menuItemDevToolsStringCr[5] & 0xFF) << 16) | ((menuItemDevToolsStringCr[6] & 0xFF) << 24);
     var menuItemDevToolsStringPtrData = address.MenuItemDevToolsString.add(intptr_ + 7);
     Memory.protect(menuItemDevToolsStringPtrData, 8, 'rw-')
-    menuItemDevToolsStringPtrData.writeUtf8String("DevTools");
+    menuItemDevToolsStringPtrData.writeUtf8String("DEVTools");
 }
 
 if (address.LaunchAppletBegin) {
