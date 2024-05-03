@@ -1,0 +1,10 @@
+{
+    "address":{
+        "LaunchAppletBegin": "0x26F1627"
+    },
+    "data":{
+        "WechatAppHtmlText":"app",
+        "WechatWebHtmlText":"web"
+    }
+    
+}
