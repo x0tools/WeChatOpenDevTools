@@ -30,7 +30,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\WeChatAppEx.exe.js",
-            "args": ["9133"]
+            "args": ["9115"]
         },
     ]
 }

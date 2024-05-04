@@ -20,6 +20,7 @@ function readStdString(s) {
         return s.readUtf8String(flag)
     }
 }
+
 function writeStdString(s, content) {
     var flag = s.add(23).readU8()
     if (flag == 0x80) {
@@ -88,7 +89,16 @@ if (address.LaunchAppletBegin) {
     }
 }
 
-
+/*
+if (address.WechatAppExLog) {
+    console.log(address.WechatAppExLog);
+    Interceptor.attach(address.WechatAppExLog, {
+        onEnter(args) {
+            send(readStdString(this.context.rax))
+        }
+    })
+}
+*/
 //过部分小程序检测debugger模式
 
 if (address.SetEnableDebug) {

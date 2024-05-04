@@ -6,7 +6,7 @@ const path = require('path');
 
 async function run() {
     let WeChatv = (process.argv[2]);
-
+    
     var device = await frida.getLocalDevice();
     var processes = await device.enumerateProcesses();
     var pid = -1;
@@ -15,7 +15,6 @@ async function run() {
         if (p_.name == "WeChatAppEx.exe") {
             let commandLine = cmdline.getCmdline(p_.pid);
             if (commandLine.indexOf("--type=") == -1) {
-                
                 try {
                     if(!WeChatv){
                         version = commandLine.split(`--wmpf_extra_config=\"{`)[1].split("}\"")[0];
